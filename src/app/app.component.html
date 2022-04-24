@@ -1,5 +1,28 @@
-<p>נא לכתוב לפחות 2 אותיות כדי להתחיל</p>
+<style>
+
+  @font-face {
+    font-family: Delicious;
+    src: url('https://rawcdn.githack.com/ShlomiC1234/SmrtnFont/b6ce782a8141cf32764fb6444bfb09d75dac5bb0/yishrael.ttf');
+  }
+
+  body {
+    font-family: Delicious;
+    text-align: right;
+    vertical-align: top;
+    direction: rtl;
+  }
+
+  .main {
+    font-family: Delicious;
+    text-align: right;
+    vertical-align: top;
+    direction: rtl;
+  }
+</style>
+
 <div class="main">
+  <p>נא לכתוב לפחות 2 אותיות כדי להתחיל</p>
+
   <input type="text" [(ngModel)]="term" />
 
   <div *ngIf="term?.length >= 2">
