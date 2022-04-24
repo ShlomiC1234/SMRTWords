@@ -26,7 +26,7 @@
   <input type="text" [(ngModel)]="term" />
 
   <div *ngIf="term?.length >= 2">
-    <div *ngFor="let item of items | filter: term | orderBy: 'count'">
+    <div *ngFor="let item of items | filter: term">
       <p>{{ item.key }} ({{ item.count }})</p>
     </div>
   </div>
