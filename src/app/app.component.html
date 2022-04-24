@@ -1,0 +1,10 @@
+<p>נא לכתוב לפחות 2 אותיות כדי להתחיל</p>
+<div>
+  <input type="text" [(ngModel)]="term" />
+
+  <div *ngIf="term.length >= 2">
+    <div *ngFor="let item of items | filter: term | orderBy: 'count'">
+      <p>{{ item.key }} ({{ item.count }})</p>
+    </div>
+  </div>
+</div>
