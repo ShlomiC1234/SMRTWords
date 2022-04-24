@@ -1,1 +1,7 @@
 /* Add application styles & imports to this file! */
+
+@font-face { font-family: Delicious; src: url('yishrael.ttf');}
+body { font-family: Delicious; 
+    text-align: right;
+    vertical-align: top;direction: rtl;
+ }
